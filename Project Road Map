@@ -1,6 +1,6 @@
-- [X] Set up Github repo and add an admin role. 
-2. Found at least one existing example code and tested the code.
-3. Plan goals for project
+1. Set up Github repo and add an admin role. DONE
+2. Found at least one existing example code and tested the code. DONE
+3. Plan goals for project. DONE
     have an input for websites to be blocked.
     have a timer for how long websites should be blocked for.
     make sure they are unblocked after.
