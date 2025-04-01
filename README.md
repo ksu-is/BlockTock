@@ -1,4 +1,4 @@
-BlockTock: A Productivity Enhancement Website Blocker App
+## BlockTock: A Productivity Enhancement Website Blocker App
 
 ## Overview
 
