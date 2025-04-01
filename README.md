@@ -12,7 +12,7 @@ Are you sick of scrolling and wasting precious time? Then BlockTock is for you! 
 4. The script is required to be executed in admin mode(see details in the How to Use section).
 
 ## How It Works
-_____________________________________________________________________________________________________________________________________________
+
 Once the app is executed, BlockTock will ask the user to accept if they want to enable the filtering mode with the following prompt: (Y/y or N/n). The app will then prompt the user to input which websites they wish to block with the proper URLs. Next, the user will determine how long they wish to block the website for in the user prompt. Once the filtering mode has been selected and the user has provided the above information, default content filtering will be enabled until the user manually disables it in the app or the allotted time runs out. The user can press cancel any time on the app, and the filtering will be automatically removed. Filtering will not be executed unless the user manually enables the website blocking.
 
 ## How to Use
