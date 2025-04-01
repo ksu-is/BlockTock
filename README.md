@@ -1,26 +1,26 @@
-Website-Blocker
+BlockTock: A Productivity Enhancement Website Blocker App
 
 ## Overview
-This project is a website blocker build using python. This script will help its users to filter out the website that they don't want to access. The app once executed will ask users to accept if they want to enable the filtering mode and on accepting the prompt(Y/y or N/n), default content filtering will be enabled till the user wants to disable it. User can any time press cancel on app and the filtering will be automatically removed. If no filtering is required at any given point in time then the execution of script can be avoided.
 
-The project also mantains a list of URLs/Domains in a separate file that the user wants to block by enabling filtering mode. This simple text file can be updated anytime and script will automatically fetch the details from the file and filter the websites provided.
+Are you sick of scrolling and wasting precious time? Then BlockTock is for you! This project uses Python to create a productivity app that allows the user to enable/disable access to selected websites for specified periods. In today's world, many people struggle with time management due to excessive distractions. This is a great solution to help users stay on task and prevent time wasted on social networking and messaging apps. Get your time back now!
 
 ## Pre-requisites
 
 1. Python 3.x installed on machine
 2. The script is currently working on Windows & Mac Operating Systems and all Linux Distributions.
-3. File containing list of URLs/Domains must be present in same folder as application.
-4. Script is required to be executed in admin mode(see details in How to Use section).
+3. A file containing a list of URLs/Domains must be present in the same folder as the application.
+4. The script is required to be executed in admin mode(see details in the How to Use section).
+
+## How It Works
+_____________________________________________________________________________________________________________________________________________
+Once the app is executed, BlockTock will ask the user to accept if they want to enable the filtering mode with the following prompt: (Y/y or N/n). The app will then prompt the user to input which websites they wish to block with the proper URLs. Next, the user will determine how long they wish to block the website for in the user prompt. Once the filtering mode has been selected and the user has provided the above information, default content filtering will be enabled until the user manually disables it in the app or the allotted time runs out. The user can press cancel any time on the app, and the filtering will be automatically removed. Filtering will not be executed unless the user manually enables the website blocking.
 
 ## How to Use
-The script is simple to understand and use. It can be utilized to its full functionality without opening/editing source code. Isn't that great? 
 
-Here is how you achieved this :
-
-1. The project mantains a separate file for list of URLs/Domains, so anytime you want to add any new URL/s or remove existing URL/s you just need to edit that text file and add a new URL on a new line and the script is ready for use.
-2. The script will automatically detect underlying Operting System to determine the host file's directory. So you don't need to update the source code based on your OS and it will be taken care smoothly.
-3. Once the script is executed successfully and the prompt is accepted, unless and until you want the filtering to don't work, the filtering will continue to work.
-4. Even if by mistake the cancel command was send to script for termination of filtering, a prompt will be displayed to confirm the disable action.
-5. On disabling the content filtering, normal functioning on your browser will apply automatically and you dont need to verify that its working or not.
+1. The project maintains a separate file for a list of URLs/Domains, so anytime you want to add any new URL/s or remove existing URL/s you just need to edit that text file and add a new URL on a new line, and the script is ready for use. This simple text file can be updated anytime and script will automatically fetch the details from the file and filter the websites provided.
+2. The script will automatically detect the underlying Operating System to determine the host file's directory.
+3. Once the script is executed successfully and the prompt is accepted, the chosen websites will be blocked for the full time duration input, unless the filtering is canceled manually.
+4. Even if by mistake, the cancel command will be sent to the script for termination of filtering, and a prompt will be displayed to confirm the disable action.
+5. Upon disabling the content filtering, normal functioning on the browser will apply automatically, and the user won't need to verify that website access has been granted again.
 
 
