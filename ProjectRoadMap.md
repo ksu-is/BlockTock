@@ -1,5 +1,5 @@
 
-[x] 1. Set up Github repo and add an admin role. DONE
+- [x] 1. Set up Github repo and add an admin role. DONE
 2. Wtite README file. DONE
 3. Schedule presentation in Teams.
 4. Commit open source license to repo in main branch.
