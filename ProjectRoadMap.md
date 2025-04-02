@@ -2,7 +2,7 @@
 - [x] 1. Set up Github repo and add an admin role. DONE
 - [x] 2. Wtite README file. DONE
 - [x] 3. Schedule presentation in Teams. DONE
-- [ ] 4. Commit open source license to repo in main branch.
+- [x] 4. Commit open source license to repo in main branch.
 - [x] 5. Find first existing example code and test the code. DONE
 - [ ] 6. Find second existing example code and test the code.
 - [x] 7. Plan goals for project. DONE
