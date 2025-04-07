@@ -2,14 +2,18 @@
 - [x] 1. Set up Github repo and add an admin role. DONE
 - [x] 2. Wtite README file. DONE
 - [x] 3. Schedule presentation in Teams. DONE
-- [x] 4. Commit open source license to repo in main branch.
+- [x] 4. Commit open source license to repo in main branch. DONE
 - [x] 5. Find first existing example code and test the code. DONE
-- [ ] 6. Find second existing example code and test the code.
+- [x] 6. Find second existing example code and test the code. DONE
 - [x] 7. Plan goals for project. DONE
-    - [ ] have an input for websites to be blocked.
-    - [ ] have a timer for how long websites should be blocked for.
-    - [ ] make sure they are unblocked after.
-    - [ ] make steps userfriendly so it's easy tog et set up.
-- [ ] 8. Start coding.
-- [ ] 9. Update "How It Works" in README file.
-- [ ] 10. Create presentation powerpoint.
+    - [ ] Have an input for websites to be blocked.
+    - [ ] Have a timer for how long websites should be blocked for.
+    - [ ] Make sure they are unblocked after.
+    - [ ] Make steps user-friendly so they're easy to set up.
+- [ ] 8. Start coding
+    - [ ] test examplecode1 and get it running, reporting on any issues and documenting how to make it work
+              - problem: does not block every website in the URL file
+              - problem: does not manually unblock all websites
+    - [ ] test examplecode2 and get it running, reporting on any issues and documenting how to make it work   
+- [ ] 9. Update "How It Works" in the README file.
+- [ ] 10. Create a PowerPoint presentation.
