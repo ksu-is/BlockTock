@@ -2,7 +2,7 @@
 
 ## Overview
 
-Are you sick of scrolling and wasting precious time? Then BlockTock is for you! This project uses Python to create a productivity app that allows the user to enable/disable access to selected websites for specified periods. In today's world, many people struggle with time management due to excessive distractions. This is a great solution to help users stay on task and prevent time wasted on social networking and messaging apps. Get your time back now!
+Are you sick of scrolling and wasting precious time? Then BlockTock is for you! This project uses Python to create a productivity app that allows the user to enable/disable access to selected websites for specified periods. Social media is heavily engrained in our daily lives in today's world, so many people struggle with time management due to excessive distractions. This is a great solution to help users stay on task with school, work, and screen-free time and prevent time wasted. Get back control of your time now!
 
 ## Pre-requisites
 
