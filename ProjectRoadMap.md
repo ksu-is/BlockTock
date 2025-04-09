@@ -15,6 +15,7 @@
     - [ ] test examplecode1 and get it running, reporting on any issues and documenting how to make it work
               - problem: does not block every website in the URL file
               - problem: does not manually unblock all websites
-    - [ ] test examplecode2 and get it running, reporting on any issues and documenting how to make it work   
+    - [ ] test examplecode2 and get it running, reporting on any issues and documenting how to make it work
+    - [ ] test examplecode3 and get it running, reporting on any issues and documenting how to make it work   
 - [ ] 9. Update "How It Works" in the README file.
 - [ ] 10. Create a PowerPoint presentation.
