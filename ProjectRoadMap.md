@@ -8,17 +8,17 @@
 - [x] 7. Plan goals for project. 
     - [ ] Have a button to select Windows or Mac host file.
     - [ ] Have an input for websites to be blocked.
-    - [ ] Have a timer for how long websites should be blocked for.
+    - [ ] Have a timer for how long websites should be blocked for, maybe a countdown on the screen.
     - [ ] Make sure they are unblocked after.
     - [ ] Make steps user-friendly so they're easy to set up.
 - [ ] 8. Start coding
-    - [ ] test examplecode1 and get it running, reporting on any issues and documenting how to make it work
-              - problem: does not block every website in the URL file
-              - problem: does not manually unblock all websites
-    - [ ] test examplecode2 and get it running, reporting on any issues and documenting how to make it work
-              - problem: did not have an unblock function
-    - [ ] test examplecode3 and get it running, reporting on any issues and documenting how to make it work
-              - problem: did not like the look of the GUI
-              - problem: had to edit the code itself to make it fucntion
+    - [x] test examplecode1 and get it running, reporting on any issues and documenting how to make it work
+              - [x] cons: does not block every website in the URL file, does not manually unblock all websites       
+    - [x] test examplecode2 and get it running, reporting on any issues and documenting how to make it work
+              - [x] cons: did not have an unblock function
+              - [x] pros: GUI setup
+    - [x] test examplecode3 and get it running, reporting on any issues and documenting how to make it work
+              - [x] cons: did not like the look of the GUI, had to edit the code itself to make it function
+              - [x] pros: the block and unblock function, web add function
 - [ ] 9. Update "How It Works" in the README file.
 - [ ] 10. Create a PowerPoint presentation.
