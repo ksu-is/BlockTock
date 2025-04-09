@@ -16,6 +16,9 @@
               - problem: does not block every website in the URL file
               - problem: does not manually unblock all websites
     - [ ] test examplecode2 and get it running, reporting on any issues and documenting how to make it work
-    - [ ] test examplecode3 and get it running, reporting on any issues and documenting how to make it work   
+              - problem: did not have an unblock function
+    - [ ] test examplecode3 and get it running, reporting on any issues and documenting how to make it work
+              - problem: did not like the look of the GUI
+              - problem: had to edit the code itself to make it fucntion
 - [ ] 9. Update "How It Works" in the README file.
 - [ ] 10. Create a PowerPoint presentation.
