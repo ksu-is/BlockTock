@@ -1,11 +1,12 @@
 
-- [x] 1. Set up Github repo and add an admin role. DONE
-- [x] 2. Wtite README file. DONE
-- [x] 3. Schedule presentation in Teams. DONE
-- [x] 4. Commit open source license to repo in main branch. DONE
-- [x] 5. Find first existing example code and test the code. DONE
-- [x] 6. Find second existing example code and test the code. DONE
-- [x] 7. Plan goals for project. DONE
+- [x] 1. Set up Github repo and add an admin role.
+- [x] 2. Write README file.
+- [x] 3. Schedule presentation in Teams.
+- [x] 4. Commit open source license to repo in main branch.
+- [x] 5. Find first existing example code and test the code.
+- [x] 6. Find second existing example code and test the code.
+- [x] 7. Plan goals for project. 
+    - [ ] Have a button to select Windows or Mac host file.
     - [ ] Have an input for websites to be blocked.
     - [ ] Have a timer for how long websites should be blocked for.
     - [ ] Make sure they are unblocked after.
