@@ -5,20 +5,22 @@
 - [x] 4. Commit open source license to repo in main branch.
 - [x] 5. Find first existing example code and test the code.
 - [x] 6. Find second existing example code and test the code.
-- [x] 7. Plan goals for project. 
-    - [ ] Have a button to select Windows or Mac host file.
-    - [ ] Have an input for websites to be blocked.
-    - [ ] Have a timer for how long websites should be blocked for, maybe a countdown on the screen.
-    - [ ] Make sure they are unblocked after.
-    - [ ] Make steps user-friendly so they're easy to set up.
-- [ ] 8. Start coding
+- [x] 7. Test existing codes
     - [x] test examplecode1 and get it running, reporting on any issues and documenting how to make it work
-        - [ ] cons: does not block every website in the URL file, does not manually unblock all websites       
+        - [x] cons: does not block every website in the URL file, does not manually unblock all websites       
     - [x] test examplecode2 and get it running, reporting on any issues and documenting how to make it work
         - [x] cons: did not have an unblock function
         - [x] pros: GUI setup
     - [x] test examplecode3 and get it running, reporting on any issues and documenting how to make it work
         - [x] cons: did not like the look of the GUI, had to edit the code itself to make it function
-        - [x] pros: the block and unblock function, web add function
-- [ ] 9. Update "How It Works" in the README file.
-- [ ] 10. Create a PowerPoint presentation.
+        - [x] pros: the block and unblock function, web add function- [x]
+- [ ] 8. Have this done by sprint 2:
+    - [ ] Have basic GUI set up.
+    - [ ] Have an input for websites to be blocked.
+    - [ ] Have a timer for how long websites should be blocked for.
+- [ ] 9. Have this done by sprint 3:
+    - [ ] Have a button to select Windows or Mac host file.
+    - [ ] Make sure they are unblocked after timer runs out.
+    - [ ] Maybe add a countdown on the screen.
+- [ ] 10. Update "How It Works" in the README file, so that it is user friendly.
+- [ ] 11. Create a PowerPoint presentation.
