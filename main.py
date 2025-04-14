@@ -58,3 +58,14 @@ def unblock():
                 path.write(line)
         
         path.truncate() #Removes leftover files
+
+
+#GUI set up
+root = Tk() #Creates main app window
+root.geometry('500x300') #Size of window in pixels
+root.resizable(0,0) #Disables resizing
+root.title("BlockTock") #Title of app
+
+#Customization of title
+Label(root, text = 'BlockTock' , font = 'Oswald 20 bold').pack()
+Label(root, text = 'BlockTock' , font = 'Oswald 20 bold').pack(side = BOTTOM)
