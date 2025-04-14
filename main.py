@@ -42,6 +42,15 @@ def block():
     current_blocked_websites = [line.split()[1] for line in path_r if line.startswith(redirect)]
     websites_to_block = [website for website in blocked_websites if website not in current_blocked_websites
 
+if websites_to_block:
+    with open(h_path, "a") as host_file:  # Open in append mode to add new entries
+        for website in websites_to_block:
+            host_file.write(redirect + " " + website + "\n")
+            print("Blocked:",website)  # Print for debugging
+    Label(root, text="Blocked", font="arial 12 bold").place(x=230, y=200)
+else:
+    Label(root, text="All websites already blocked", font="arial 12 bold").place(x=200, y=200)
+    
     #path = open(h_path, "r+") # Open the hosts file in read/write mode
     #path_r = path.read() # Read its contents (not strictly needed here)
 
@@ -50,22 +59,35 @@ def block():
         path.write(redirect + " " + website + "\n") # Add redirect entry for each website
 
 #Function to unblock the websites by removing them from host file
-def unblock():
+#def unblock():
     
-    with open(h_path, "r+") as path: 
+    #with open(h_path, "r+") as path: 
 
-        path_r = path.readlines() #Reads all the lines
+        #path_r = path.readlines() #Reads all the lines
 
-        path.seek(0) #Moves cursor back to the beginning of file
+        #path.seek(0) #Moves cursor back to the beginning of file
 
         #Writes back all lines except for blocked websites
-        for line in path_r:
+        #for line in path_r:
         
-            if not any(website in line for website in blocked_websites):
+            #if not any(website in line for website in blocked_websites):
 
-                path.write(line)
+                #path.write(line)
         
-        path.truncate() #Removes leftover files
+        #path.truncate() #Removes leftover files
+
+def unblock():
+    # Step 1: Read the hosts file content once
+    with open(h_path, "r+") as host_file:
+        path_r = host_file.readlines()  # Read the file into a list of lines
+
+    # Step 2: Filter out blocked websites
+    lines_to_keep = [line for line in path_r if not any(website in line for website in website_arr)]
+
+    # Step 3: Write the updated content back to the file
+    with open(h_path, "w") as host_file:
+        host_file.writelines(lines_to_keep)  # Write all lines back, except for the blocked ones
+    Label(root, text="Unblocked", font="arial 12 bold").place(x=230, y=200)
 
 
 #GUI set up
