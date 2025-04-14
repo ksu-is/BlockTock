@@ -133,7 +133,7 @@ unblock_button.pack(side=RIGHT)
 # Automatically apply light/dark theme based on system settings
 sv_ttk.set_theme(darkdetect.theme())
 
-Optional Windows customization for modern header styling (currently commented out)
+# Optional Windows customization for modern header styling (currently commented out)
 if platform.system() == "Windows":
     if sys.getwindowsversion().major == 10 and sys.getwindowsversion().build >= 22000:
          if sv_ttk.get_theme() == "dark":
