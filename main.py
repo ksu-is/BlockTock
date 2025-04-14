@@ -40,7 +40,7 @@ def block():
     with open(h_path, "r+") as host_file:
         path_r = host_file.readlines()
     current_blocked_websites = [line.split()[1] for line in path_r if line.startswith(redirect)]
-    websites_to_block = [website for website in blocked_websites if website not in current_blocked_websites
+    websites_to_block = [website for website in blocked_websites if website not in current_blocked_websites]
 
 if websites_to_block:
     with open(h_path, "a") as host_file:  # Open in append mode to add new entries
@@ -129,6 +129,16 @@ block_btn.place(x=230, y=150)
 # Button to unblock websites
 unblock_button = ttk.Button(root, text="Unblock", command=unblock)
 unblock_button.pack(side=RIGHT)
+unblock_button = Button(
+    root,
+    text='UNBLOCK',
+    font='arial 12 bold',
+    command=unblock,
+    width=6,
+    bg='royal blue1',
+    activebackground='sky blue'
+)
+block_btn.place(x=230, y=150)
 
 # add_button to call web_add()
 add_button = Button(
