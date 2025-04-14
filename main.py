@@ -39,7 +39,7 @@ def block():
 
     for website in blocked_websites:
 
-        path.write(redirect, " ", website, "\n") # Add redirect entry for each website
+        path.write(redirect + " " + website + "\n") # Add redirect entry for each website
 
 #Function to unblock the websites by removing them from host file
 def unblock():
