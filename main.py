@@ -69,3 +69,33 @@ root.title("BlockTock") #Title of app
 #Customization of title
 Label(root, text = 'BlockTock' , font = 'Oswald 20 bold').pack()
 Label(root, text = 'BlockTock' , font = 'Oswald 20 bold').pack(side = BOTTOM)
+
+# Label prompting user input
+Label(root, text='Enter Website:', font='Oswald 13 bold').place(x=5, y=60)
+
+# Text area where user can enter one or more websites, comma-separated
+Websites = Text(
+    root,
+    font='arial 10',
+    height=2,
+    width=40,
+    wrap=WORD,
+    padx=5,
+    pady=5
+)
+Websites.place(x=140, y=60)
+
+# Button to trigger the Blocker function
+block_btn = Button(
+    root,
+    text='BLOCK',
+    font='arial 12 bold',
+    command=Blocker,
+    width=6,
+    bg='royal blue1',
+    activebackground='sky blue'
+)
+block_btn.place(x=230, y=150)
+
+# Start the Tkinter event loop
+root.mainloop()
