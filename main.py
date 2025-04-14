@@ -96,5 +96,18 @@ block_btn = Button(
 )
 block_btn.place(x=230, y=150)
 
-# Start the Tkinter event loop
+# Button to unblock websites
+unblock_button = ttk.Button(root, text="Unblock", command=unblock)
+unblock_button.pack(side=RIGHT)
+
+# Automatically apply light/dark theme based on system settings
+sv_ttk.set_theme(darkdetect.theme())
+
+Optional Windows customization for modern header styling (currently commented out)
+if platform.system() == "Windows":
+    if sys.getwindowsversion().major == 10 and sys.getwindowsversion().build >= 22000:
+         if sv_ttk.get_theme() == "dark":
+             pywinstyles.change_header_color(root, "#000000")
+
+# Run the GUI event loop
 root.mainloop()
