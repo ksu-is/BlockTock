@@ -2,8 +2,8 @@
 from tkinter import * #Module for basic GUI elements
 from tkinter import ttk #Module for GUI widgets
 import platform #For identifying the OS
-import sv_ttk #For cusotm themes on ttk
-import sys #System-leel functions
+import sv_ttk #For custom themes on ttk
+import sys #System-level functions
 import pywinstyles # Customization for Windows
 import darkdetect #Detects light or dark mode on system
 
@@ -21,14 +21,14 @@ h_path = "ENTER HOSTS FILE PATH HERE"
 redirect = "127.0.0.1"
 
 # Array to store websites to block
-website_arr = []
+blocked_websites = []
 
 # Function to add entered website to the list
 def web_add():
 
-    website_arr.append(website_entry.get()) # Get text from entry box and add to array
+    blocked_websites.append(website_entry.get()) # Get text from entry box and add to array
 
-    print(website_arr) # Print the list for debugging
+    print(blocked_websites) # Print the list for debugging
 
 # Function to block websites by adding entries to the hosts file
 def block():
@@ -37,11 +37,11 @@ def block():
 
     path_r = path.read() # Read its contents (not strictly needed here)
 
-    for website in website_arr:
+    for website in blocked_websites:
 
-        path.write(f"{redirect} {website}\n") # Add redirect entry for each website
+        path.write(redirect, " ", website, "\n") # Add redirect entry for each website
 
-#Fuction to unblock the websites by removing them from host file
+#Function to unblock the websites by removing them from host file
 def unblock():
     
     with open(h_path, "r+") as path: 
@@ -53,7 +53,7 @@ def unblock():
         #Writes back all lines except for blocked websites
         for line in path_r:
         
-            if not any(website in line for website in website_arr):
+            if not any(website in line for website in blocked_websites):
 
                 path.write(line)
         
@@ -67,8 +67,7 @@ root.resizable(0,0) #Disables resizing
 root.title("BlockTock") #Title of app
 
 #Customization of title
-Label(root, text = 'BlockTock' , font = 'Oswald 20 bold').pack()
-Label(root, text = 'BlockTock' , font = 'Oswald 20 bold').pack(side = BOTTOM)
+Label(root, text = 'BlockTock' , font = 'Oswald 20 bold').pack(side = TOP)
 
 # Label prompting user input
 Label(root, text='Enter Website:', font='Oswald 13 bold').place(x=5, y=60)
@@ -90,7 +89,7 @@ block_btn = Button(
     root,
     text='BLOCK',
     font='arial 12 bold',
-    command=Blocker,
+    command=block,
     width=6,
     bg='royal blue1',
     activebackground='sky blue'
