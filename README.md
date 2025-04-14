@@ -17,10 +17,11 @@ Once the app is executed, BlockTock will ask the user to accept if they want to 
 
 ## How to Use
 
-1. The project maintains a separate file for a list of URLs/Domains, so anytime you want to add any new URL/s or remove existing URL/s you just need to edit that text file and add a new URL on a new line, and the script is ready for use. This simple text file can be updated anytime and script will automatically fetch the details from the file and filter the websites provided.
-2. The script will automatically detect the underlying Operating System to determine the host file's directory.
-3. Once the script is executed successfully and the prompt is accepted, the chosen websites will be blocked for the full time duration input, unless the filtering is canceled manually.
-4. Even if by mistake, the cancel command will be sent to the script for termination of filtering, and a prompt will be displayed to confirm the disable action.
-5. Upon disabling the content filtering, normal functioning on the browser will apply automatically, and the user won't need to verify that website access has been granted again.
+1. The user will run the code (either in an IDE such as Visual Studio Code or the terminal). A window will pop up in which the user can input which websites they wish to block. The user can press the unblock button at any time to regain access to the selected website.
+2. The project maintains a separate file for a list of URLs/Domains, so anytime you want to add any new URL/s or remove existing URL/s you just need to edit that text file and add a new URL on a new line, and the script is ready for use. This simple text file can be updated anytime and script will automatically fetch the details from the file and filter the websites provided.
+3. The script will automatically detect the underlying Operating System to determine the host file's directory.
+4. Once the script is executed successfully and the prompt is accepted, the chosen websites will be blocked for the full time duration input, unless the filtering is canceled manually.
+5. Even if by mistake, the cancel command will be sent to the script for termination of filtering, and a prompt will be displayed to confirm the disable action.
+6. Upon disabling the content filtering, normal functioning on the browser will apply automatically, and the user won't need to verify that website access has been granted again.
 
 
