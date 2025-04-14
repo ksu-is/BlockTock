@@ -26,16 +26,24 @@ blocked_websites = []
 # Function to add entered website to the list
 def web_add():
 
-    blocked_websites.append(website_entry.get()) # Get text from entry box and add to array
+    website_text = Websites.get("1.0", END).strip()
+    for site in website_text.split(","):
+        blocked_websites.append(site.strip())
+                                    
+    # blocked_websites.append(website_entry.get()) # Get text from entry box and add to array
 
     print(blocked_websites) # Print the list for debugging
 
 # Function to block websites by adding entries to the hosts file
 def block():
+    #reads the host files contents once.
+    with open(h_path, "r+") as host_file:
+        path_r = host_file.readlines()
+    current_blocked_websites = [line.split()[1] for line in path_r if line.startswith(redirect)]
+    websites_to_block = [website for website in blocked_websites if website not in current_blocked_websites
 
-    path = open(h_path, "r+") # Open the hosts file in read/write mode
-
-    path_r = path.read() # Read its contents (not strictly needed here)
+    #path = open(h_path, "r+") # Open the hosts file in read/write mode
+    #path_r = path.read() # Read its contents (not strictly needed here)
 
     for website in blocked_websites:
 
