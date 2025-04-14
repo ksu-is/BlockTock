@@ -130,6 +130,18 @@ block_btn.place(x=230, y=150)
 unblock_button = ttk.Button(root, text="Unblock", command=unblock)
 unblock_button.pack(side=RIGHT)
 
+# add_button to call web_add()
+add_button = Button(
+    root,
+    text='Add Website',
+    font='arial 10 bold',
+    command=web_add,
+    width=12,
+    bg='green',
+    fg='white'
+)
+add_button.place(x=230, y=110)
+
 # Automatically apply light/dark theme based on system settings
 sv_ttk.set_theme(darkdetect.theme())
 
