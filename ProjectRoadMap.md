@@ -1,19 +1,27 @@
 
-- [x] 1. Set up Github repo and add an admin role. DONE
-- [x] 2. Wtite README file. DONE
-- [x] 3. Schedule presentation in Teams. DONE
-- [x] 4. Commit open source license to repo in main branch. DONE
-- [x] 5. Find first existing example code and test the code. DONE
-- [x] 6. Find second existing example code and test the code. DONE
-- [x] 7. Plan goals for project. DONE
+- [x] 1. Set up Github repo and add an admin role.
+- [x] 2. Write README file.
+- [x] 3. Schedule presentation in Teams.
+- [x] 4. Commit open source license to repo in main branch.
+- [x] 5. Find first existing example code and test the code.
+- [x] 6. Find second existing example code and test the code.
+- [x] 7. Test existing codes
+    - [x] test examplecode1 and get it running, reporting on any issues and documenting how to make it work
+        - [x] cons: does not block every website in the URL file, does not manually unblock all websites       
+    - [x] test examplecode2 and get it running, reporting on any issues and documenting how to make it work
+        - [x] cons: did not have an unblock function
+        - [x] pros: GUI setup
+    - [x] test examplecode3 and get it running, reporting on any issues and documenting how to make it work
+        - [x] cons: did not like the look of the GUI, had to edit the code itself to make it function
+        - [x] pros: the block and unblock function, web add function- [x]
+- [ ] 8. Have this done by sprint 2:
+    - [x] Test examplecode3 on mac
+    - [ ] Have basic GUI set up.
     - [ ] Have an input for websites to be blocked.
     - [ ] Have a timer for how long websites should be blocked for.
-    - [ ] Make sure they are unblocked after.
-    - [ ] Make steps user-friendly so they're easy to set up.
-- [ ] 8. Start coding
-    - [ ] test examplecode1 and get it running, reporting on any issues and documenting how to make it work
-              - problem: does not block every website in the URL file
-              - problem: does not manually unblock all websites
-    - [ ] test examplecode2 and get it running, reporting on any issues and documenting how to make it work   
-- [ ] 9. Update "How It Works" in the README file.
-- [ ] 10. Create a PowerPoint presentation.
+- [ ] 9. Have this done by sprint 3:
+    - [ ] Have a button to select Windows or Mac host file.
+    - [ ] Make sure they are unblocked after timer runs out.
+    - [ ] Maybe add a countdown on the screen.
+- [ ] 10. Update "How It Works" in the README file, so that it is user friendly.
+- [ ] 11. Create a PowerPoint presentation.
