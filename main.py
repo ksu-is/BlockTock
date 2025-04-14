@@ -1,7 +1,7 @@
 # Importing the required modules
 from tkinter import * #Module for basic GUI elements
 from tkinter import ttk #Module for GUI widgets
-import platformm #For identifying the OS
+import platform #For identifying the OS
 import sv_ttk #For cusotm themes on ttk
 import sys #System-leel functions
 import pywinstyles # Customization for Windows
