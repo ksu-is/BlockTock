@@ -1,10 +1,11 @@
-from tkinter import *
-from tkinter import ttk
-import platform
-import sv_ttk
-import sys
-import pywinstyles
-import darkdetect
+# Importing the required modules
+from tkinter import * #Module for basic GUI elements
+from tkinter import ttk #Module for GUI widgets
+import platformm #For identifying the OS
+import sv_ttk #For cusotm themes on ttk
+import sys #System-leel functions
+import pywinstyles # Customization for Windows
+import darkdetect #Detects light or dark mode on system
 
 """
 Hosts Paths On Windows, Mac & Linux:
@@ -39,19 +40,21 @@ def block():
     for website in website_arr:
 
         path.write(f"{redirect} {website}\n") # Add redirect entry for each website
-    
+
+#Fuction to unblock the websites by removing them from host file
 def unblock():
     
-    with open(h_path, "r+") as path:
+    with open(h_path, "r+") as path: 
 
-        path_r = path.readlines()
+        path_r = path.readlines() #Reads all the lines
 
-        path.seek(0)
+        path.seek(0) #Moves cursor back to the beginning of file
 
+        #Writes back all lines except for blocked websites
         for line in path_r:
         
             if not any(website in line for website in website_arr):
 
                 path.write(line)
         
-        path.truncate()
+        path.truncate() #Removes leftover files
