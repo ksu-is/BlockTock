@@ -15,6 +15,7 @@
         - [x] cons: did not like the look of the GUI, had to edit the code itself to make it function
         - [x] pros: the block and unblock function, web add function- [x]
 - [ ] 8. Have this done by sprint 2:
+    - [x] Test examplecode3 on mac
     - [ ] Have basic GUI set up.
     - [ ] Have an input for websites to be blocked.
     - [ ] Have a timer for how long websites should be blocked for.
