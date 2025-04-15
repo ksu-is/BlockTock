@@ -14,13 +14,13 @@
     - [x] test examplecode3 and get it running, reporting on any issues and documenting how to make it work
         - [x] cons: did not like the look of the GUI, had to edit the code itself to make it function
         - [x] pros: the block and unblock function, web add function
-- [ ] 8. Have this done by sprint 2:
+- [x] 8. Have this done by sprint 2:
     - [x] Test examplecode3 on mac
     - [x] Have basic GUI set up.
     - [x] Have an input for websites to be blocked.
-    - [ ] Have a timer for how long websites should be blocked.
 - [ ] 9. Have this done by sprint 3:
     - [ ] Have a button to select Windows or Mac host file.
+    - [ ]    - [ ] Have a timer for how long websites should be blocked.
     - [ ] Make sure they are unblocked after the timer runs out.
     - [ ] Maybe add a countdown on the screen.
 - [ ] 10. Update "How It Works" in the README file to be user-friendly.
