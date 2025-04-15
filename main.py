@@ -40,9 +40,9 @@ def block():
     if websites_to_block:
         with open(h_path, "a") as host_file:  # Open in append mode to add new entries
             for website in websites_to_block:
-                host_file.write(redirect + " " + website + "\n")
+                host_file.write("\n" + redirect + " " + website + "\n")
                 print("Blocked:",website)  # Print for debugging
-       Label(root, text="Blocked", font="arial 12 bold").place(x=230, y=200)
+        Label(root, text="Blocked", font="arial 12 bold").place(x=230, y=200)
     else:
         Label(root, text="All websites already blocked", font="arial 12 bold").place(x=200, y=200)
     
@@ -127,16 +127,6 @@ if platform.system() == "Windows":
     if sys.getwindowsversion().major == 10 and sys.getwindowsversion().build >= 22000:
          if sv_ttk.get_theme() == "dark":
              pywinstyles.change_header_color(root, "#000000")
-
-# Button to select OS type
-self.os_var = tk.StringVar()
-self.os_var.set("Windows")  # Default to Windows
-tk.Label(self.root, text="Select OS:").pack(pady=10)
-os_frame = tk.Frame(self.root)
-os_frame.pack(pady=5)
-tk.Radiobutton(os_frame, text="Windows", variable=self.os_var, value="Windows").pack(side=tk.LEFT)
-tk.Radiobutton(os_frame, text="Mac", variable=self.os_var, value="Mac").pack(side=tk.LEFT)
-
 
 # Run the GUI event loop
 root.mainloop()
