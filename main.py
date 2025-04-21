@@ -97,7 +97,6 @@ block_button.place(x= 140, y=170)
 
 # Button to unblock websites
 unblock_button = ttk.Button(root, text="Unblock", command=unblock)
-unblock_button.pack(side=RIGHT)
 unblock_button = Button(
     root,
     text='UNBLOCK',
