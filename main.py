@@ -121,7 +121,7 @@ add_button = Button(
     activebackground = 'sky blue',
     fg='white'
 )
-add_button.place(x=185, y=215)
+add_button.place(x=185, y=125)
 
 # Automatically apply light/dark theme based on system settings
 sv_ttk.set_theme(darkdetect.theme())
