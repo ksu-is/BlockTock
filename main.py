@@ -42,9 +42,9 @@ def block():
             for website in websites_to_block:
                 host_file.write("\n" + redirect + " " + website + "\n")
                 print("Blocked:",website)  # Print for debugging
-        Label(root, text="Blocked", font="arial 12 bold").place(x=230, y=200)
+        Label(root, text="Blocked", font="arial 12 bold").place(x=210, y=220)
     else:
-        Label(root, text="All websites already blocked", font="arial 12 bold").place(x=200, y=200)
+        Label(root, text="All websites already blocked", font="arial 12 bold").place(x=150, y=220)
     
 #Function to unblock the websites by removing them from host file
 def unblock():
@@ -55,7 +55,7 @@ def unblock():
     with open(h_path, "w") as host_file:
         host_file.writelines(lines_to_keep)
 
-    Label(root, text="Unblocked", font="arial 12 bold").place(x=230, y=200)
+    Label(root, text="Unblocked", font="arial 12 bold").place(x=210, y=220)
 
 #GUI set up
 root = Tk() #Creates main app window
@@ -64,34 +64,36 @@ root.resizable(0,0) #Disables resizing
 root.title("BlockTock") #Title of app
 
 #Customization of title
-Label(root, text = 'BlockTock' , font = 'Oswald 20 bold').pack(side = TOP)
+Label(root, text = 'BlockTock' , font = ("arial", 25, "bold")).pack(anchor= "n")
 
 # Label prompting user input
-Label(root, text='Enter Website:', font='Oswald 13 bold').place(x=5, y=60)
+Label(root, text='Enter Website:', font = ("arial", 12, "bold")).pack(anchor= "center")
 
 # Text area where user can enter one or more websites, comma-separated
 Websites = Text(
     root,
-    font='arial 10',
+    font='arial 12',
     height=2,
     width=40,
     wrap=WORD,
     padx=5,
     pady=5
 )
-Websites.place(x=140, y=60)
+Websites.pack(anchor= "center")
 
 # Button to trigger the Blocker function
-block_btn = Button(
+block_button = Button(
     root,
     text='BLOCK',
     font='arial 12 bold',
     command=block,
-    width=6,
-    bg='royal blue1',
-    activebackground='sky blue'
+    width=9,
+    bg='deep pink',
+    activebackground='sky blue',
+    fg = 'white'
 )
-block_btn.place(x=230, y=150)
+block_button.pack(side=LEFT)
+block_button.place(x= 140, y=170)
 
 # Button to unblock websites
 unblock_button = ttk.Button(root, text="Unblock", command=unblock)
@@ -101,23 +103,25 @@ unblock_button = Button(
     text='UNBLOCK',
     font='arial 12 bold',
     command=unblock,
-    width=6,
-    bg='royal blue1',
-    activebackground='sky blue'
+    width=9,
+    bg='deep pink',
+    activebackground='sky blue',
+    fg = 'white'
 )
-block_btn.place(x=230, y=150)
+unblock_button.place(x=270, y=170)
 
 # add_button to call web_add()
 add_button = Button(
     root,
-    text='Add Website',
-    font='arial 10 bold',
+    text='ADD WEBSITE',
+    font='arial 12 bold',
     command=web_add,
     width=12,
-    bg='purple',
+    bg='DarkOrchid1',
+    activebackground = 'sky blue',
     fg='white'
 )
-add_button.place(x=230, y=110)
+add_button.place(x=185, y=215)
 
 # Automatically apply light/dark theme based on system settings
 sv_ttk.set_theme(darkdetect.theme())
