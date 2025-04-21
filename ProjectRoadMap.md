@@ -5,23 +5,21 @@
 - [x] 4. Commit open source license to repo in main branch.
 - [x] 5. Find first existing example code and test the code.
 - [x] 6. Find second existing example code and test the code.
-- [x] 7. Test existing codes
-    - [x] test examplecode1 and get it running, reporting on any issues and documenting how to make it work
-        - [x] cons: does not block every website in the URL file, does not manually unblock all websites       
-    - [x] test examplecode2 and get it running, reporting on any issues and documenting how to make it work
-        - [x] cons: did not have an unblock function
-        - [x] pros: GUI setup
-    - [x] test examplecode3 and get it running, reporting on any issues and documenting how to make it work
-        - [x] cons: did not like the look of the GUI, had to edit the code itself to make it function
-        - [x] pros: the block and unblock function, web add function
+- [x] 7. Test existing codes.
+    - [x] test examplecode1 and get it running, reporting on any issues and documenting how to make it work.
+        - [x] cons: does not block every website in the URL file, does not manually unblock all websites.
+    - [x] test examplecode2 and get it running, reporting on any issues and documenting how to make it work.
+        - [x] cons: did not have an unblock function.
+        - [x] pros: GUI setup.
+    - [x] test examplecode3 and get it running, reporting on any issues and documenting how to make it work.
+        - [x] cons: did not like the look of the GUI, had to edit the code itself to make it function.
+        - [x] pros: the block and unblock function, web add function.
 - [x] 8. Have this done by sprint 2:
-    - [x] Test examplecode3 on mac
+    - [x] Test examplecode3 on mac.
     - [x] Have basic GUI set up.
     - [x] Have an input for websites to be blocked.
 - [ ] 9. Have this done by sprint 3:
-    - [ ] Have a button to select Windows or Mac host file.
-    - [ ]    - [ ] Have a timer for how long websites should be blocked.
-    - [ ] Make sure they are unblocked after the timer runs out.
-    - [ ] Maybe add a countdown on the screen.
+    - [ ] Have a button for OS type Windows of Mac.
+    - [x] Make sure wesbites are blocked and unblocked properly.
 - [ ] 10. Update "How It Works" in the README file to be user-friendly.
 - [ ] 11. Create a PowerPoint presentation.
