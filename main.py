@@ -70,56 +70,21 @@ Label(root, text = 'BlockTock' , font = ("arial", 25, "bold")).pack(anchor= "n")
 Label(root, text='Enter Website:', font = ("arial", 12, "bold")).pack(anchor= "center")
 
 # Text area where user can enter one or more websites, comma-separated
-Websites = Text(
-    root,
-    font='arial 12',
-    height=2,
-    width=40,
-    wrap=WORD,
-    padx=5,
-    pady=5
-)
+Websites = Text(root, font='arial 12', height=2, width=40, wrap=WORD, padx=5, pady=5)
 Websites.pack(anchor= "center")
 
 # Button to trigger the Blocker function
-block_button = Button(
-    root,
-    text='BLOCK',
-    font='arial 12 bold',
-    command=block,
-    width=9,
-    bg='deep pink',
-    activebackground='sky blue',
-    fg = 'white'
-)
+block_button = Button(root, text='BLOCK', font='arial 12 bold', command=block, width=9, bg='deep pink', activebackground='sky blue', fg = 'white')
 block_button.pack(side=LEFT)
 block_button.place(x= 140, y=170)
 
 # Button to unblock websites
 unblock_button = ttk.Button(root, text="Unblock", command=unblock)
-unblock_button = Button(
-    root,
-    text='UNBLOCK',
-    font='arial 12 bold',
-    command=unblock,
-    width=9,
-    bg='deep pink',
-    activebackground='sky blue',
-    fg = 'white'
-)
+unblock_button = Button(root, text='UNBLOCK', font='arial 12 bold', command=unblock, width=9, bg='deep pink', activebackground='sky blue', fg = 'white')
 unblock_button.place(x=270, y=170)
 
 # add_button to call web_add()
-add_button = Button(
-    root,
-    text='ADD WEBSITE',
-    font='arial 12 bold',
-    command=web_add,
-    width=12,
-    bg='DarkOrchid1',
-    activebackground = 'sky blue',
-    fg='white'
-)
+add_button = Button(root, text='ADD WEBSITE', font='arial 12 bold', command=web_add, width=12, bg='DarkOrchid1', activebackground = 'sky blue', fg='white')
 add_button.place(x=185, y=125)
 
 # Automatically apply light/dark theme based on system settings
