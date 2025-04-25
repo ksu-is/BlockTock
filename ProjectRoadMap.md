@@ -18,8 +18,8 @@
     - [x] Test examplecode3 on mac.
     - [x] Have basic GUI set up.
     - [x] Have an input for websites to be blocked.
-- [ ] 9. Have this done by sprint 3:
-    - [ ] Have a button for OS type Windows of Mac.
+- [x] 9. Have this done by sprint 3:
+    - [x] Have a button for the OS type: Windows or Mac/Linux.
     - [x] Make sure wesbites are blocked and unblocked properly.
 - [ ] 10. Update "How It Works" in the README file to be user-friendly.
 - [ ] 11. Create a PowerPoint presentation.
