@@ -27,7 +27,6 @@ Comment out the following lines if you're not running this app on Windows:
 
 Line 7: 
 
-import pwinstyles
 <img width="451" alt="Screenshot 2025-04-25 at 1 33 10 PM" src="https://github.com/user-attachments/assets/562074dd-46bb-4b10-b156-4b7df09a8d3e" />
 
 Lines 106 - 109: 
