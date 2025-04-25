@@ -2,26 +2,44 @@
 
 ## Overview
 
-Are you sick of scrolling and wasting precious time? Then BlockTock is for you! This project uses Python to create a productivity app that allows the user to enable/disable access to selected websites. Social media is heavily ingrained in our daily lives in today's world, so many people struggle with time management due to excessive distractions. This is a great solution to help users stay on task with school, work, and screen-free time and prevent time wasted. Get back control of your time now!
+Are you sick of scrolling and wasting precious time? Then BlockTock is for you! This project uses Python to create a productivity app that allows users to enable/disable access to selected websites. Social media is heavily ingrained in our daily lives today, so many people struggle with time management due to excessive distractions. This is a great solution to help users stay focused on school or work, reduce screen time, and reclaim lost hours. Take back control of your time today!
 
 ## Pre-requisites
 
-1. Python 3.x installed on machine
-2. The script is currently working on Windows & Mac Operating Systems and all Linux Distributions.
-3. A file containing a list of URLs/Domains must be present in the same folder as the application.
-4. The script is required to be executed in admin mode(see details in the How to Use section).
+1. User must have Python 3.x installed on their machine.
+2. This Python code currently works on both Windows and Mac Operating Systems and all Linux Distributions.
+3. Modules that need to be installed beforehand with -m pip install:
+  - sv_ttk 
+  - pywinstyles (THIS MODULE IS ONLY REQUIRED FOR WINDOWS)
+  - darkdetect 
 
-## How It Works
+## How to Use the BlockTock App
 
-Once the app is executed, BlockTock will ask the user to accept if they want to enable the filtering mode with the following prompt: (Y/y or N/n). The app will then prompt the user to input which websites they wish to block with the proper URLs. Next, the user will determine how long they wish to block the website for in the user prompt. Once the filtering mode has been selected and the user has provided the above information, default content filtering will be enabled until the user manually disables it in the app or the allotted time runs out. The user can press cancel any time on the app, and the filtering will be automatically removed. Filtering will not be executed unless the user manually enables the website blocking.
+1. Launch the app — the BlockTock window will open automatically.
+2. Select your Operating System from the dropdown menu and confirm.
+3. Enter the website URL you want to block in the text box and click "ADD WEBSITE".
+4. Click "Block" to restrict access to the website.
+5. To regain access, click "Unblock" at any time.
 
-## How to Use
+## Notes
 
-1. The user will run the code (either in an IDE such as Visual Studio Code or the terminal). A window will pop up in which the user can input which websites they wish to block. The user can press the unblock button at any time to regain access to the selected website.
-2. The project maintains a separate file for a list of URLs/Domains, so anytime you want to add any new URL/s or remove existing URL/s you just need to edit that text file and add a new URL on a new line, and the script is ready for use. This simple text file can be updated anytime and script will automatically fetch the details from the file and filter the websites provided.
-3. The script will automatically detect the underlying Operating System to determine the host file's directory.
-4. Once the script is executed successfully and the prompt is accepted, the chosen websites will be blocked for the full time duration input, unless the filtering is canceled manually.
-5. Even if by mistake, the cancel command will be sent to the script for termination of filtering, and a prompt will be displayed to confirm the disable action.
-6. Upon disabling the content filtering, normal functioning on the browser will apply automatically, and the user won't need to verify that website access has been granted again.
+Comment out the following lines if you're not running this app on Windows:
 
+Line 7: 
 
+import pwinstyles
+
+Lines 106 - 109: 
+
+if platform.system() == "Windows":
+    if sys.getwindowsversion().major == 10 and sys.getwindowsversion().build >= 22000:
+         if sv_ttk.get_theme() == "dark":
+             pywinstyles.change_header_color(root, "#000000")
+
+## Acknowledgments and Code References
+
+Portions of this project were developed with assistance from OpenAI's ChatGPT.
+Components of this project were adapted from:
+[SmashFrenzy16/Website-Blocker](https://github.com/SmashedFrenzy16/Website-Blocker), licensed under [Apache License 2.0]
+[Yash-2403/Python-Website-Blocker](https://github.com/Yash-2403/Python-Website-Blocker)
+[AzharAnwar9/Python-Website-Blocker](https://github.com/AzharAnwar9/Python-Website-Blocker/tree/main)
