@@ -7,14 +7,8 @@ import sys #System-level functions
 import pywinstyles # Customization for Windows
 import darkdetect #Detects light or dark mode on system
 
-"""
-Hosts Paths On Windows, Mac & Linux:
-Windows: C:\Windows\System32\drivers\etc\hosts
-Mac & Linux: /etc/hosts
-"""
-
 # Path to the hosts file on operating system (change accordingly for Windows/Linux/Mac)
-h_path = "ENTER HOSTS FILE PATH HERE"
+h_path = ""
 
 # Redirect IP to block websites
 redirect = "127.0.0.1"
@@ -57,14 +51,40 @@ def unblock():
 
     Label(root, text="Unblocked", font="arial 12 bold").place(x=210, y=220)
 
+# Function to set the OS path based on dropdown selection
+def set_os_path():
+    global h_path
+    selected_os = os_dropdown.get()  # <-- getting value directly from the dropdown
+    if selected_os == "Windows":
+        h_path = r"C:\Windows\System32\drivers\etc\hosts"
+    elif selected_os == "Mac" or selected_os == "Linux":
+        h_path = "/etc/hosts"
+    else:
+        h_path = ""
+
 #GUI set up
 root = Tk() #Creates main app window
-root.geometry('500x300') #Size of window in pixels
+root.geometry('500x400') #Size of window in pixels
 root.resizable(0,0) #Disables resizing
 root.title("BlockTock") #Title of app
 
 #Customization of title
 Label(root, text = 'BlockTock' , font = ("arial", 25, "bold")).pack(anchor= "n")
+
+# Label for OS selection
+Label(root, text='Select Your OS:', font=("arial", 12, "bold")).place(x=70, y=130)
+#Label(frame, text='Select Your OS:', font=("arial", 12, "bold")).pack(anchor="center", pady=5)
+
+# OS dropdown menu with values
+os_dropdown = ttk.Combobox(root, values=["Windows", "Mac", "Linux"], state="readonly", width=10)
+os_dropdown.place(x=175, y=125)
+os_dropdown.current(0)  # Set default to Windows
+
+# Button to confirm OS selection
+os_button = Button(root, text='CONFIRM OS', font='arial 12 bold', command=set_os_path, width=10, bg='black', fg='white')
+os_button.place(x=340, y=125)
+#os_button = Button(frame, text='CONFIRM OS', font='arial 10 bold', command=set_os_path, width=10, bg='light blue')
+#os_button.pack(pady=5)
 
 # Label prompting user input
 Label(root, text='Enter Website:', font = ("arial", 12, "bold")).pack(anchor= "center")
@@ -72,6 +92,10 @@ Label(root, text='Enter Website:', font = ("arial", 12, "bold")).pack(anchor= "c
 # Text area where user can enter one or more websites, comma-separated
 Websites = Text(root, font='arial 12', height=2, width=40, wrap=WORD, padx=5, pady=5)
 Websites.pack(anchor= "center")
+
+# add_button to call web_add()
+add_button = Button(root, text='ADD WEBSITE', font='arial 12 bold', command=web_add, width=12, bg='DarkOrchid1', activebackground = 'sky blue', fg='white')
+add_button.place(x=185, y=125)
 
 # Button to trigger the Blocker function
 block_button = Button(root, text='BLOCK', font='arial 12 bold', command=block, width=9, bg='deep pink', activebackground='sky blue', fg = 'white')
@@ -82,10 +106,6 @@ block_button.place(x= 140, y=170)
 unblock_button = ttk.Button(root, text="Unblock", command=unblock)
 unblock_button = Button(root, text='UNBLOCK', font='arial 12 bold', command=unblock, width=9, bg='deep pink', activebackground='sky blue', fg = 'white')
 unblock_button.place(x=270, y=170)
-
-# add_button to call web_add()
-add_button = Button(root, text='ADD WEBSITE', font='arial 12 bold', command=web_add, width=12, bg='DarkOrchid1', activebackground = 'sky blue', fg='white')
-add_button.place(x=185, y=125)
 
 # Automatically apply light/dark theme based on system settings
 sv_ttk.set_theme(darkdetect.theme())
