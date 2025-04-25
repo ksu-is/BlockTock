@@ -16,10 +16,10 @@ Are you sick of scrolling and wasting precious time? Then BlockTock is for you! 
 ## How to Use the BlockTock App
 
 1. Launch the app — the BlockTock window will open automatically.
-2. Select your Operating System from the dropdown menu and confirm.
+2. Select your Operating System from the dropdown menu and "CONFIRM OS".
 3. Enter the website URL you want to block in the text box and click "ADD WEBSITE".
-4. Click "Block" to restrict access to the website.
-5. To regain access, click "Unblock" at any time.
+4. Click "BLOCK" to restrict access to the website.
+5. To regain access, click "UNBLOCK" at any time.
 
 ## Notes
 
@@ -28,13 +28,11 @@ Comment out the following lines if you're not running this app on Windows:
 Line 7: 
 
 import pwinstyles
+<img width="451" alt="Screenshot 2025-04-25 at 1 33 10 PM" src="https://github.com/user-attachments/assets/562074dd-46bb-4b10-b156-4b7df09a8d3e" />
 
 Lines 106 - 109: 
 
-if platform.system() == "Windows":
-    if sys.getwindowsversion().major == 10 and sys.getwindowsversion().build >= 22000:
-         if sv_ttk.get_theme() == "dark":
-             pywinstyles.change_header_color(root, "#000000")
+<img width="744" alt="Screenshot 2025-04-25 at 1 33 30 PM" src="https://github.com/user-attachments/assets/e28980e3-2a54-4307-bb31-6b61c1e0d779" />
 
 ## Acknowledgments and Code References
 
