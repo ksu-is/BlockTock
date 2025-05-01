@@ -23,4 +23,4 @@
     - [x] Make sure wesbites are blocked and unblocked properly.
 - [x] 10. Update "How It Works" in the README file to be user-friendly.
 - [x] 11. Create a PowerPoint presentation.
-- [ ] 12. Practice presenting & present.
+- [x] 12. Practice presenting & present.
